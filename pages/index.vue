@@ -2,28 +2,6 @@
   <div>
     	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<nav class="left">
-					<a href="#menu"><span>Menu</span></a>
-				</nav>
-				<a href="index.html" class="logo">intensify</a>
-				<nav class="right">
-					<a href="#" class="button alt">Log in</a>
-				</nav>
-			</header>
-
-		<!-- Menu -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.vue">Home</a></li>
-					<li><a href="generic.vue">Generic</a></li>
-					<li><a href="elements.vue">Elements</a></li>
-				</ul>
-				<ul class="actions vertical">
-					<li><a href="#" class="button fit">Login</a></li>
-				</ul>
-			</nav>
 
 		<!-- Banner -->
 		<!-- 	<section id="banner">
@@ -65,21 +43,6 @@
 					</div>
 				</div>
 			</section>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>Get In Touch</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</footer>
 	</body>
   </div>
 </template>
