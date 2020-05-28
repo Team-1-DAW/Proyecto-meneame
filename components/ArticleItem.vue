@@ -5,7 +5,7 @@
 							<!-- <img :src='"("+ img +")"' alt="" /> -->
 						</div>
 						<div class="content">
-							<nuxt-link to="/article/">{{title}}</nuxt-link to="/article/">
+							<nuxt-link :to='"/article/("+ id +")"'>{{title}}</nuxt-link >
               <p>{{category}}</p>
 							<p>{{resume}}</p>
               <p>{{date}}</p>
@@ -27,17 +27,12 @@ export default {
   },
   props: ["title", "urlArticle","date","resume","category"],
   methods:{
-    likes(){
+    async likes(){
       this.numberLikes ++
     },
     dislikes(){
       this.numberDislikes ++
     }
-  },
-  /* computed:{
-    numberLikes(){
-
-    }
-  } */
+  }
 }
 </script>

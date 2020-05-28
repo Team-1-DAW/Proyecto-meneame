@@ -7,7 +7,8 @@
 				<button class="button alt small fit"><nuxt-link to="/">Meneame</nuxt-link></button>
 				<nav class="right">
 					<button class="button alt small fit"><nuxt-link to="/login">Login</nuxt-link></button>
-          			<button class="button alt small fit"><nuxt-link to="/registre">Sing Up</nuxt-link></button>
+          <button class="button alt small fit"><nuxt-link to="/registre">Sing Up</nuxt-link></button>
+          <button class="button alt small fit"><nuxt-link to="/newArticles">Add articles</nuxt-link></button>
 				</nav>
 			</header>
       <nav id="menu">
