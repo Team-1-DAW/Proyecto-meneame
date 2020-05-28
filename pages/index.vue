@@ -3,15 +3,15 @@
     	<body>
 			<section id="three" class="wrapper">
 				<div class="inner flex flex-3">
-					<Article v-for="item in articles" :key="item.id">
-					</Article>	
+					<ArticleItem v-for="item in articles" :key="item._id" :title="item.title" :urlArticle="urlArticle" :date="date" :resume="resume">
+					</ArticleItem>
 				</div>
 			</section>
 	</body>
   </div>
 </template>
 <script>
-import Article from '@/components/Article'
+import ArticleItem from '@/components/ArticleItem'
 export default {
 	name: "index",
 	data(){
@@ -20,11 +20,11 @@ export default {
 		}
 	},
 	components:{
-		Article
+		ArticleItem
 	},
 	async mounted(){
-		const response = await this.$axios.get('http://localhost:8080/articles');
-		this.articles = response.data
+		const response = await this.$axios.get('/articles');
+    this.articles = response.data
 	}
 }
 </script>
