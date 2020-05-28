@@ -12,7 +12,7 @@
 			</header>
       <nav id="menu">
 				<ul class="links">
-					<li><nuxt-link to="" class="logo">Home</nuxt-link></li>
+					<li><nuxt-link to="/" class="logo">Home</nuxt-link></li>
 					<li><nuxt-link to="/generic">Generic</nuxt-link></li>
 					<li><nuxt-link to="/elements">Elements</nuxt-link></li>
 				</ul>
