@@ -1,17 +1,6 @@
 <template>
   <div>
     	<body>
-
-
-		<!-- Banner -->
-		<!-- 	<section id="banner">
-				<div class="content">
-					<h1>Ipsum sed lorem</h1>
-					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br />sed arcu cras consecuat lorem ipsum dolor sit amet.</p>
-				</div>
-			</section> -->
-
-		<!-- Three -->
 			<section id="three" class="wrapper">
 				<div class="inner flex flex-3">
 					<div class="flex-item box">
