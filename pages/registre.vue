@@ -1,6 +1,14 @@
 <template>
   <div>
     <div>
+    <label for="name">Name</label><br>
+    <input type="text" placeholder="Name" v-model="name"><br>
+    </div>
+    <div>
+    <label for="surname">Surname</label><br>
+    <input type="text" placeholder="Surname" v-model="surname"><br>
+    </div>
+    <div>
     <label for="email">Email</label><br>
     <input type="email" placeholder="example@example.com" v-model="email"><br>
     </div>
@@ -17,14 +25,18 @@ export default {
   data(){
     return{
       email: "",
-      password:""
+      password:"",
+      name:"",
+      surname:""
     }
   },
   methods:{
      async registre(){
       let userData={
         email: this.email,
-        password: this.password
+        password: this.password,
+        name: this.name,
+        surname: this.surname
       }
       const addUser = await this.$axios.post('http://localhost:8080/users', userData)
       this.$router.push('/')
