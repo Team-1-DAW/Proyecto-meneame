@@ -5,12 +5,14 @@
 							<!-- <img :src='"("+ img +")"' alt="" /> -->
 						</div>
 						<div class="content">
-							<h3>{{title}}</h3>
+							<nuxt-link to="/article/">{{title}}</nuxt-link to="/article/">
               <p>{{category}}</p>
 							<p>{{resume}}</p>
               <p>{{date}}</p>
               <p>{{urlArticle}}</p>
 						</div>
+            <button @click.prevent="likes" class="button small">{{numberLikes}}</button>
+            <button @click.prevent="dislikes" class="button special small">{{numberDislikes}}</button>
 					</div>
   </div>
 </template>
@@ -19,9 +21,23 @@ export default {
   name:"Article",
   data(){
     return{
-
+      numberLikes: 0,
+      numberDislikes: 0
     }
   },
-  props: ["title", "urlArticle","date","resume","category"]
+  props: ["title", "urlArticle","date","resume","category"],
+  methods:{
+    likes(){
+      this.numberLikes ++
+    },
+    dislikes(){
+      this.numberDislikes ++
+    }
+  },
+  /* computed:{
+    numberLikes(){
+
+    }
+  } */
 }
 </script>

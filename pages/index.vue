@@ -3,7 +3,7 @@
     	<body>
 			<section id="three" class="wrapper">
 				<div class="inner flex flex-3">
-					<ArticleItem v-for="item in articles" :key="item._id" :title="item.title" :urlArticle="urlArticle" :date="date" :resume="resume">
+					<ArticleItem v-for="item in articles" :key="item._id" :title="item.title" :urlArticle="item.urlArticle" :date="item.date" :resume="item.resume" :category="item.category">
 					</ArticleItem>
 				</div>
 			</section>
@@ -23,8 +23,9 @@ export default {
 		ArticleItem
 	},
 	async mounted(){
-		const response = await this.$axios.get('/articles');
+		const response = await this.$axios.get('https://apimeneame.herokuapp.com/articles');
     this.articles = response.data
+    console.log(this.articles)
 	}
 }
 </script>
