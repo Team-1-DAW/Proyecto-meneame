@@ -10,7 +10,7 @@
               <p>{{category}}</p>
 							<p>{{resume}}</p>
               <p>{{date}}</p>
-              <a :href='"("+ urlArticle +")"'>{{urlArticle}}</a>
+              <a :href="urlArticle">Ir a la noticia</a>
 						</div>
             <button @click.prevent="likes" class="button small">{{numberLikes}}</button>
             <button @click.prevent="dislikes" class="button special small">{{numberDislikes}}</button>
