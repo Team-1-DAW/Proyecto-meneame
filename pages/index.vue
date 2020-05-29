@@ -16,7 +16,7 @@
             </select>
 
 				<div class="inner flex flex-3">
-					<ArticleItem v-for="item in filteredArticles" :key="item._id" :title="item.title" :urlArticle="item.urlArticle" :date="item.date" :resume="item.resume" :category="item.category" :id="item._id" :numberLikes="item.vote.positive" @clickLike="addLikes(item)" :numberDislikes="item.vote.negative" @clickDislike="addDislikes(item)">
+					<ArticleItem v-for="item in filteredArticles" :key="item._id" :title="item.title" :urlArticle="item.url" :date="item.date" :resume="item.resume" :category="item.category" :id="item._id" :numberLikes="item.vote.positive" :href="item.url" @clickLike="addLikes(item)" :numberDislikes="item.vote.negative" @clickDislike="addDislikes(item)">
 
 					</ArticleItem>
 				</div>

@@ -5,11 +5,12 @@
 							<!-- <img :src='"("+ img +")"' alt="" /> -->
 						</div>
 						<div class="content">
-							<nuxt-link :to='"/article/("+ id +")"'>{{title}}</nuxt-link >
+							<!-- <nuxt-link :to='"/article/("+ id +")"'>{{title}}</nuxt-link > -->
+              <h1>{{title}}</h1>
               <p>{{category}}</p>
 							<p>{{resume}}</p>
               <p>{{date}}</p>
-              <p>{{urlArticle}}</p>
+              <a :href='"("+ urlArticle +")"'>{{urlArticle}}</a>
 						</div>
             <button @click.prevent="likes" class="button small">{{numberLikes}}</button>
             <button @click.prevent="dislikes" class="button special small">{{numberDislikes}}</button>

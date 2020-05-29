@@ -49,7 +49,7 @@ export default {
         title:this.title,
         resume:this.resume,
         category:this.CategorySelected,
-        urlArticle:this.urlArticle,
+        url:this.urlArticle,
         date:this.date
     }
     const addNewArticle = await this.$axios.post('https://apimeneame.herokuapp.com/articles', newArticle);
