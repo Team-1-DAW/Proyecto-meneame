@@ -6,7 +6,7 @@
 					<ul class="actions">
 						<li><span class="icon fa-phone"></span> <a href="#">900 00 00 00</a></li>
 						<li><span class="icon fa-envelope"></span> <a href="#">emailfalso@gmail.com</a></li>
-						<li><span class="icon fa-map-marker"></span> C/ falsa 123</li>
+						<li><span class="icon fa-map-marker"></span> C/ falsa 345</li>
 					</ul>
 				</div>
 				<div class="copyright">
