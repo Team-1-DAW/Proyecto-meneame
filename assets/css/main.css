@@ -1651,7 +1651,7 @@
 			}
 
 		}
-	
+
 
 	a {
 		color: #010a0c;
@@ -2392,7 +2392,7 @@
 		background-color: rgb(45, 97, 32);
 		border-radius: 10px;
 		border: 0;
-		color: #ffffff;
+		color: #black;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Montserrat", sans-serif;
@@ -2404,7 +2404,7 @@
 		text-transform: uppercase;
 	}
 
-	
+
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
@@ -3197,4 +3197,3 @@
 				}
 
 		}
-		

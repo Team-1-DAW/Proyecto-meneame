@@ -7,6 +7,7 @@
 					<button class="log"><nuxt-link to="/login">Login</nuxt-link></button>
           			<button class="log"><nuxt-link to="/registre">Sing Up</nuxt-link></button>
           			<button class="log"><nuxt-link to="/newArticles">Add articles</nuxt-link></button>
+                	<button class="log button alt small fit" @click.prevent="logOut">Log out</button>
 				</nav>
 			</header>
       <nav id="menu">
@@ -23,6 +24,12 @@
 </template>
 <script>
 export default {
-  name:"MainNav"
+  name:"MainNav",
+  methods:{
+    logOut(){
+      window.localStorage.removeItem("token");
+      alert('se ha cerrado la sesion')
+    }
+  }
 }
 </script>
