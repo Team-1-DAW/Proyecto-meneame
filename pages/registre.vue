@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <form>
     <div>
     <label for="name">Name</label><br>
     <input type="text" placeholder="Name" v-model="name"><br>
@@ -17,7 +17,7 @@
     <input type="password" v-model="password"><br>
     </div>
     <button href="#" @click.prevent="registre">Sing up</button>
-  </div>
+  </form>
 </template>
 <script>
 export default {

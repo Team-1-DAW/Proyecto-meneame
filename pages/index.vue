@@ -1,7 +1,7 @@
 <template>
   <div>
     	<body>
-			<section id="three" class="wrapper">
+			<section id="" class="wrapper">
 				<div class="inner flex flex-3">
 					<ArticleItem v-for="item in articles" :key="item._id" :title="item.title" :urlArticle="item.urlArticle" :date="item.date" :resume="item.resume" :category="item.category">
 					</ArticleItem>
