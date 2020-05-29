@@ -8,7 +8,17 @@
             <input type="text" v-model="resume">
 
             <label for="Category">Category:</label>
-            <input type="text" v-model="category">
+            <select name="Category" id="Category" v-model="CategorySelected">
+                <option value="Deporte">Deporte</option>
+                <option value="Salud">Salud</option>
+                <option value="Politica">Politica</option>
+                <option value="Animales">Animales</option>
+                <option value="Desarrollo y Multimedia">Desarrollo y Multimedia</option>
+                <option value="Anime">Anime</option>
+                <option value="Literatura">Literatura</option>
+                <option value="Ciencia">Ciencia</option>
+                <option value="Musica">Musica</option>
+            </select>
 
             <label for="Url">Url:</label>
             <input type="text" v-model="urlArticle">
@@ -27,7 +37,7 @@ export default {
         return{
             title:"",
             resume:"",
-            category:"",
+            CategorySelected:"",
             urlArticle:"",
             date:""
 
@@ -38,7 +48,7 @@ export default {
     let newArticle={
         title:this.title,
         resume:this.resume,
-        category:this.category,
+        category:this.CategorySelected,
         urlArticle:this.urlArticle,
         date:this.date
     }
