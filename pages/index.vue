@@ -39,7 +39,7 @@ export default {
 		ArticleItem
 	},
 	async mounted(){
-		const response = await this.$axios.get('https://apimeneame.herokuapp.com/articles');
+		const response = await this.$axios.get('articles');
     this.articles = response.data
   },
   methods:{
@@ -47,7 +47,7 @@ export default {
     let vote={
       positive: item.vote.positive++
     }
-    const response = await this.$axios.put(`https://apimeneame.herokuapp.com/articles/${item._id}`, vote );
+    const response = await this.$axios.put(`articles/${item._id}`, vote );
     },
 
     // article
@@ -67,7 +67,7 @@ export default {
     let vote={
       negative: item.vote.negative++
     }
-    const response = await this.$axios.put(`https://apimeneame.herokuapp.com/articles/${item._id}`, vote );
+    const response = await this.$axios.put(`articles/${item._id}`, vote );
     },
     changeCurrentCategory(){
       let articulos = this.articles

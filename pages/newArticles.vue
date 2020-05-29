@@ -52,7 +52,7 @@ export default {
         url:this.urlArticle,
         date:this.date
     }
-    const addNewArticle = await this.$axios.post('https://apimeneame.herokuapp.com/articles', newArticle);
+    const addNewArticle = await this.$axios.post('articles', newArticle);
     this.$router.push('/')
     }
     }

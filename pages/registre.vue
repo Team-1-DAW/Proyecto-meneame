@@ -38,7 +38,7 @@ export default {
         name: this.name,
         surname: this.surname
       }
-      const addUser = await this.$axios.post('/users', userData)
+      const addUser = await this.$axios.post('users', userData)
       this.$router.push('/')
 
     }

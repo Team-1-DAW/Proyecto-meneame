@@ -30,7 +30,7 @@ export default {
          email: this.email,
           password: this.password
       }
-      const addUser = await this.$axios.post('/login', userData);
+      const addUser = await this.$axios.post('auth/login', userData);
       window.localStorage.setItem("token",addUser.data.token)
       this.$router.push('/')
     }

@@ -58,7 +58,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-   /*  baseUrl: "https://apimeneame.herokuapp.com/" */
+    baseURL: "https://apimeneame.herokuapp.com/"
   },
   /*
   ** Build configuration
