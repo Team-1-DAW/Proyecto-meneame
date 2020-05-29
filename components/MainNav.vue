@@ -3,8 +3,14 @@
     	<header id="header">
 				<button class="button alt small fit"><nuxt-link to="/">Meneame</nuxt-link></button>
 				<nav class="right">
+<<<<<<< HEAD
 					<button class="log"><nuxt-link to="/login">Login</nuxt-link></button>
           			<button class="log"><nuxt-link to="/registre">Sing Up</nuxt-link></button>
+=======
+					<button class="button alt small fit"><nuxt-link to="/login">Login</nuxt-link></button>
+          <button class="button alt small fit"><nuxt-link to="/registre">Sing Up</nuxt-link></button>
+          <button class="button alt small fit"><nuxt-link to="/newArticles">Add articles</nuxt-link></button>
+>>>>>>> 8ea426f8699e901b57821b4cb9e7635d461385ea
 				</nav>
 			</header>
       <nav id="menu">
