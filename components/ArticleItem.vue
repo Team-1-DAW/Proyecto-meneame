@@ -25,13 +25,13 @@ export default {
       numberDislikes: 0
     }
   },
-  props: ["title", "urlArticle","date","resume","category"],
+  props: ["title", "urlArticle","date","resume","category", "numberLikes","numberDislikes"],
   methods:{
-    async likes(){
-      this.numberLikes ++
+    likes(){
+      this.$emit("clickLike")
     },
     dislikes(){
-      this.numberDislikes ++
+      this.$emit("clickDislike")
     }
   }
 }
